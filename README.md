@@ -61,6 +61,10 @@ endmodule
 
 ![screenshot of code coverage]
 (https://photos.app.goo.gl/6BfbmSiWar6qwqeDA)
+
 ![screenshot of waveform]
 (https://photos.app.goo.gl/Gityb9uj1fdkwnVp8)
+
+![pdf of the project]
+(https://www.canva.com/design/DAFyGVbt3MU/Fg1V4eEKzMK3Bc-ON-xC1A/edit?utm_content=DAFyGVbt3MU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
