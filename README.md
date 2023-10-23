@@ -58,3 +58,9 @@ module tb_up_counter;
     end
 
 endmodule
+
+![screenshot of code coverage]
+(https://photos.app.goo.gl/6BfbmSiWar6qwqeDA)
+![screenshot of waveform]
+(https://photos.app.goo.gl/Gityb9uj1fdkwnVp8)
+
