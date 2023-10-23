@@ -19,3 +19,42 @@ module up_counter (
     assign count = count_reg;  // Output is the value in the register
 
 endmodule
+
+# testbench 
+module tb_up_counter;
+
+    reg clk;
+    reg rst;
+    wire [3:0] count;
+
+    // Instantiate the up_counter module
+    up_counter uut (
+        .clk(clk),
+        .rst(rst),
+        .count(count)
+    );
+
+    // Clock generation
+    always begin
+        #5 clk = ~clk;
+    end
+
+    // Initialize signals
+    initial begin
+        clk = 0;
+        rst = 0;
+
+        // Reset the counter
+        rst = 1;
+        #10 rst = 0;
+
+        // Monitor the count
+        $monitor("Time=%0t count=%h", $time, count);
+    end
+
+    // Simulate for some time
+    initial begin
+        #50 $finish;
+    end
+
+endmodule
