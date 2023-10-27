@@ -1,11 +1,13 @@
 # FFVDD_AHP
 # Design code 
 
+
 module up_counter (
     input wire clk,
     input wire rst,
     output wire [3:0] count
 );
+ 
   reg [3:0] count_reg;  // 4-bit counter register
 
     always @(posedge clk or posedge rst) begin
