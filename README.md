@@ -2,12 +2,11 @@
 # Design code 
 
 module up_counter (
-    input wire clk,  // Clock input
-    input wire rst,  // Reset input
-    output wire [3:0] count  // 4-bit counter output
+    input wire clk,
+    input wire rst,
+    output wire [3:0] count
 );
-
-    reg [3:0] count_reg;  // 4-bit counter register
+  reg [3:0] count_reg;  // 4-bit counter register
 
     always @(posedge clk or posedge rst) begin
         if (rst) begin
@@ -24,7 +23,6 @@ endmodule
 # testbench 
 
 module tb_up_counter;
-
     reg clk;
     reg rst;
     wire [3:0] count;
