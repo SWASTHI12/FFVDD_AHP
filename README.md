@@ -1,5 +1,6 @@
 # FFVDD_AHP
 # Design code 
+
 module up_counter (
     input wire clk,  // Clock input
     input wire rst,  // Reset input
@@ -21,6 +22,7 @@ module up_counter (
 endmodule
 
 # testbench 
+
 module tb_up_counter;
 
     reg clk;
