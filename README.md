@@ -1,9 +1,4 @@
-      Code Coverage 
       
-![IMG-20231019-WA0007(2)](https://github.com/SWASTHI12/FFVDD_AHP/assets/131871466/ee3d970f-7e86-408f-98ba-b185cdf3bec8)
-     Wave form
-     
-![IMG-20231019-WA0008(2)](https://github.com/SWASTHI12/FFVDD_AHP/assets/131871466/1abe63b3-9949-4b81-8923-6732cd8cc769)
 
 
 # FFVDD_AHP
@@ -71,11 +66,9 @@ module tb_up_counter;
 
 endmodule
 
-![screenshot of code coverage]
-(https://photos.app.goo.gl/6BfbmSiWar6qwqeDA)
+![20231120_202843_0009](https://github.com/SWASTHI12/FFVDD_AHP/assets/131871466/6fae227f-74a0-4cbe-ba5f-9bde63446214)
+![20231120_202843_0010](https://github.com/SWASTHI12/FFVDD_AHP/assets/131871466/a81cdb0e-9371-47bb-8fd0-5a2095170fbe)
 
-![screenshot of waveform]
-(https://photos.app.goo.gl/Gityb9uj1fdkwnVp8)
 
 ![pdf of the project]
 (https://www.canva.com/design/DAFyGVbt3MU/Fg1V4eEKzMK3Bc-ON-xC1A/edit?utm_content=DAFyGVbt3MU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
