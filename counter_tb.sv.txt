@@ -1,0 +1,53 @@
+module tb_counter_top;
+bit clk=0;
+bit rst=1;
+bit [3:0] data_out;
+bit [3:0] data=0;
+bit load=0;
+bit updown=0;
+counter_intf intf(clk,rst);
+counter_test test(intf);
+counter dut(.clk(intf.clk),.rst(intf.rst),.load(intf.load),.updown(intf.updown),.data(intf.data),.data_out(intf.data_out));
+always #5 clk = ~ clk;
+initial begin
+rst = 1;
+#10 rst=0;
+#5 load=1;
+#5 data=4'b0001;
+#10 updown=1;
+#5;
+rst=0;
+#5 load=1;
+#5 data=4'b0101;
+#10;
+#5 data=4'b1000;
+#5 updown=0;
+#10;
+#5 load=0;
+#5 updown=1;
+#5 data = 4'b1111;
+#10 updown=0;
+#10;
+#5 load=1;
+#5 data=4'b0111;
+rst = 1;
+#10 rst=0;
+#5 load=1;
+#5 data = 4'b0000;
+#10 updown=1;
+#10;
+#5 load=0;
+#5 updown=0;
+#10;
+load=1;
+data = 4'b1101;
+#5 load=0;
+#5 updown=1;
+#5 data=4'b0011;
+#10 updown=0;
+#20;
+$finish;
+end
+endmodule
+
+
